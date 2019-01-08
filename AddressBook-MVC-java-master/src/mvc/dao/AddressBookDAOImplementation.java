@@ -37,9 +37,10 @@ public class AddressBookDAOImplementation implements AddressBookDAO{
           conn = DBConnection.getInstance().getConnect();
            st = conn.createStatement();
            String qry;
-           qry = "insert into AddressBook values ('"+person.getName()+"','"+person.getMob()+"','"+person.getEmail()+"',address='"+person.getAddress()+"')";
+           qry = "insert into AddressBook values ('"+person.getName()+"','"+person.getMob()+"','"+person.getEmail()+"','"+person.getAddress()+"','"+person.getPincode()+"')";
+           System.out.println(qry);
            st.executeUpdate(qry);
-           conn.close();
+             conn.close();
         }
             
        catch(SQLException e)
@@ -75,7 +76,7 @@ public class AddressBookDAOImplementation implements AddressBookDAO{
            st = conn.createStatement();
            
            System.out.println();person.getName();
-            String qry="update AddressBook set name='"+person.getName()+"',mob='"+person.getMob()+"',email='"+person.getEmail()+"',address='"+person.getAddress()+"' where name='"+name+"'";
+            String qry="update AddressBook set name='"+person.getName()+"',mob='"+person.getMob()+"',email='"+person.getEmail()+"' where name='"+name+"'";
            st.executeUpdate(qry);
            conn.close();
         }
@@ -133,7 +134,8 @@ public class AddressBookDAOImplementation implements AddressBookDAO{
              detailPanel.setName(rs.getString("name"));
              detailPanel.seteMail(rs.getString("email"));
              detailPanel.setMobile(rs.getString("mob"));
-             
+             detailPanel.setAddress(rs.getString("address"));
+              detailPanel.setPincode(rs.getString("pincode"));
            }
             conn.close();
         }
@@ -141,6 +143,9 @@ public class AddressBookDAOImplementation implements AddressBookDAO{
                    System.out.println("NO Records/Cannot retrieve records");
                    }
     }
+    
+    
+    }
            
     
-}
+
