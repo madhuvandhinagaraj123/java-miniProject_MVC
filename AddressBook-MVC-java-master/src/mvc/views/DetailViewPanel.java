@@ -103,11 +103,11 @@ public class DetailViewPanel extends javax.swing.JPanel {
         jLabel5 = new javax.swing.JLabel();
         txt_pincode = new javax.swing.JTextField();
 
-        setBackground(new java.awt.Color(51, 0, 51));
+        setBackground(new java.awt.Color(153, 255, 51));
         setForeground(new java.awt.Color(0, 255, 255));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 3, 12)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 0, 51));
+        jLabel1.setForeground(new java.awt.Color(255, 51, 102));
         jLabel1.setText("Name*");
         jLabel1.setPreferredSize(new java.awt.Dimension(35, 15));
 
@@ -136,7 +136,7 @@ public class DetailViewPanel extends javax.swing.JPanel {
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 2, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 204, 204));
-        jLabel4.setText("Address");
+        jLabel4.setText("Address*");
 
         txt_address.setFont(new java.awt.Font("Times New Roman", 2, 11)); // NOI18N
         txt_address.setForeground(new java.awt.Color(255, 0, 204));

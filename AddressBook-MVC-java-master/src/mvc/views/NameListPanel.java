@@ -64,7 +64,7 @@ public class NameListPanel extends javax.swing.JPanel {
         jLabel1.setForeground(new java.awt.Color(0, 153, 153));
         jLabel1.setText("Contacts");
 
-        contactList.setBackground(new java.awt.Color(0, 0, 0));
+        contactList.setBackground(new java.awt.Color(255, 102, 0));
         contactList.setFont(new java.awt.Font("Times New Roman", 3, 12)); // NOI18N
         contactList.setForeground(new java.awt.Color(204, 0, 0));
         contactList.setModel(new javax.swing.AbstractListModel() {
